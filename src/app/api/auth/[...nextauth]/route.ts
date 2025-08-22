@@ -15,6 +15,9 @@ export const authOptions: NextAuthOptions = {
       issuer: `https://${process.env.AUTH0_DOMAIN}`,
     }),
   ],
+  pages: {
+    signIn: "/auth/signin"
+  },
   session: {
     strategy: "jwt",
   },
