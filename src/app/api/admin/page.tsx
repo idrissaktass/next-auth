@@ -25,7 +25,7 @@ export default function AdminPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-white">
+      <div className="flex items-center justify-center h-screen bg-gray-100">
         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
       </div>
     );
@@ -34,7 +34,7 @@ export default function AdminPage() {
   if (!session) return null;
 
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
+    <div className="flex items-center justify-center h-screen bg-gray-100">
       {session.user.role === "admin" && (
         <div className="flex flex-col items-center bg-red-900 p-8 rounded shadow*xl">
           <h1 className="text-2xl font-semibold mb-4 text-white">Admin Panel - Welcome {session.user.name}</h1>
