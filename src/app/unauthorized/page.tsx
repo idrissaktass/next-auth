@@ -10,6 +10,7 @@ export default function UnauthorizedPage() {
       <div className="flex flex-col items-center bg-red-900 p-8 rounded shadow*xl">
         <h1 className="text-2xl font-semibold mb-4 text-white">Access Denied</h1>
         <p className="mb-3">You do not have permission to view this page.</p>
+        <p className="mb-3 text-xl">Try admin@example.com</p>
         <button
         onClick={() => router.push("/")}
         className="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer"
