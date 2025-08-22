@@ -2,11 +2,13 @@
 
 import {use, useEffect, useState } from "react";
 import {getSession, signOut } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [session, setSession] = useState<any>(null)
   const [loading,setLoading] = useState(true)
-  
+  const router = useRouter();
+
   useEffect(() => {
     getSession().then((sess) => {
       setSession(sess);
@@ -55,6 +57,12 @@ export default function Home() {
           Log out
         </button>
       </div>
+      <button
+          onClick={() => router.push("/api/admin")} 
+          className="px-2 py-1 bg-red-500 text-white rounded hover:bg-red-600 cursor-pointer mt-10"
+        >
+          Test the admin page
+        </button>
     </div>
   );
 }
