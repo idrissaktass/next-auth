@@ -12,8 +12,8 @@ export default function SignInPage() {
   }
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="flex flex-col items-center bg-red-900 px-10 py-13 rounded shadow-xl">
+    <div className="flex items-center justify-center h-screen bg-slate-800">
+      <div className="flex flex-col items-center bg-slate-700 px-10 py-13 rounded shadow-xl border-2 border-slate-500">
         <h1 className="text-2xl font-bold mb-6">Login or sign up</h1>
         <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 cursor-pointer"
           onClick={handleSignIn}>
