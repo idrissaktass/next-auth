@@ -27,16 +27,16 @@ cd myshop
 npm install or yarn install
 
 ### 3- Environment variables
-# Auth0 Credentials
+#### Auth0 Credentials
 AUTH0_CLIENT_ID=YOUR_CLIENT_ID
 AUTH0_CLIENT_SECRET=YOUR_CLIENT_SECRET
 AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
 
-# NextAuth Configuration
+#### NextAuth Configuration
 NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET
 NEXTAUTH_URL=http://localhost:3000
 
-# Public Environment Variables
+#### Public Environment Variables
 NEXT_PUBLIC_AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
 NEXT_PUBLIC_AUTH0_CLIENT_ID=YOUR_CLIENT_ID
 NEXT_PUBLIC_NEXTAUTH_URL=http://localhost:3000
