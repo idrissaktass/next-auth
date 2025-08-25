@@ -22,18 +22,27 @@ Main features:
 ### 1- Clone the repo
 git clone https://github.com/idrissaktass/next-auth.git
 cd myshop
+
 ### 2- Install dependencies
 npm install or yarn install
+
 ### 3- Environment variables
+# Auth0 Credentials
 AUTH0_CLIENT_ID=YOUR_CLIENT_ID
 AUTH0_CLIENT_SECRET=YOUR_CLIENT_SECRET
 AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
+
+# NextAuth Configuration
 NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET
 NEXTAUTH_URL=http://localhost:3000
+
+# Public Environment Variables
 NEXT_PUBLIC_AUTH0_DOMAIN=YOUR_AUTH0_DOMAIN
 NEXT_PUBLIC_AUTH0_CLIENT_ID=YOUR_CLIENT_ID
 NEXT_PUBLIC_NEXTAUTH_URL=http://localhost:3000
+
 Replace YOUR_CLIENT_ID, YOUR_CLIENT_SECRET, and YOUR_AUTH0_DOMAIN with your actual Auth0 credentials.
+
 ### 3- Run the development server
 npm run dev or yarn dev
 
